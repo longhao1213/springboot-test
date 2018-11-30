@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lh.dao.RoleMapper" >
+  <resultMap id="BaseResultMap" type="com.lh.model.Role" >
+    <id column="r_id" property="rId" jdbcType="INTEGER" />
+    <result column="r_description" property="rDescription" jdbcType="VARCHAR" />
+    <result column="r_keyword" property="rKeyword" jdbcType="VARCHAR" />
+    <result column="r_name" property="rName" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    r_id, r_description, r_keyword, r_name
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.lh.model.RoleExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from yb_role
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from yb_role
+    where r_id = #{rId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from yb_role
+    where r_id = #{rId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lh.model.RoleExample" >
+    delete from yb_role
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.lh.model.Role" >
+    insert into yb_role (r_id, r_description, r_keyword, 
+      r_name)
+    values (#{rId,jdbcType=INTEGER}, #{rDescription,jdbcType=VARCHAR}, #{rKeyword,jdbcType=VARCHAR}, 
+      #{rName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lh.model.Role" >
+    insert into yb_role
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="rId != null" >
+        r_id,
+      </if>
+      <if test="rDescription != null" >
+        r_description,
+      </if>
+      <if test="rKeyword != null" >
+        r_keyword,
+      </if>
+      <if test="rName != null" >
+        r_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="rId != null" >
+        #{rId,jdbcType=INTEGER},
+      </if>
+      <if test="rDescription != null" >
+        #{rDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="rKeyword != null" >
+        #{rKeyword,jdbcType=VARCHAR},
+      </if>
+      <if test="rName != null" >
+        #{rName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.lh.model.RoleExample" resultType="java.lang.Integer" >
+    select count(*) from yb_role
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update yb_role
+    <set >
+      <if test="record.rId != null" >
+        r_id = #{record.rId,jdbcType=INTEGER},
+      </if>
+      <if test="record.rDescription != null" >
+        r_description = #{record.rDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="record.rKeyword != null" >
+        r_keyword = #{record.rKeyword,jdbcType=VARCHAR},
+      </if>
+      <if test="record.rName != null" >
+        r_name = #{record.rName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update yb_role
+    set r_id = #{record.rId,jdbcType=INTEGER},
+      r_description = #{record.rDescription,jdbcType=VARCHAR},
+      r_keyword = #{record.rKeyword,jdbcType=VARCHAR},
+      r_name = #{record.rName,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lh.model.Role" >
+    update yb_role
+    <set >
+      <if test="rDescription != null" >
+        r_description = #{rDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="rKeyword != null" >
+        r_keyword = #{rKeyword,jdbcType=VARCHAR},
+      </if>
+      <if test="rName != null" >
+        r_name = #{rName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where r_id = #{rId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lh.model.Role" >
+    update yb_role
+    set r_description = #{rDescription,jdbcType=VARCHAR},
+      r_keyword = #{rKeyword,jdbcType=VARCHAR},
+      r_name = #{rName,jdbcType=VARCHAR}
+    where r_id = #{rId,jdbcType=INTEGER}
+  </update>
+  
+  <select id="findAllRoleByUserId" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+       SELECT
+      yb_role.*
+      FROM
+          yb_role JOIN user_role
+      ON
+       user_role.r_id = yb_role.r_id
+      WHERE
+          user_role.u_id = #{rId,jdbcType=INTEGER}
+  </select>
+</mapper>

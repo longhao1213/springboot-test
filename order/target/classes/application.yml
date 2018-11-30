@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: order
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+server:
+  port: 8086
+
+#开启断路器
+feign:
+   hystrix:
+     enabled: true
+###超时时间
+hystrix:
+   command:
+     default:
+       execution:
+        isolation:
+         thread:
+          timeoutInMilliseconds: 4000
