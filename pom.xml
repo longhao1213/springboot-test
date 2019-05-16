@@ -25,6 +25,8 @@
         <module>mongodb</module>
         <module>jwt</module>
         <module>authority</module>
+        <module>nio</module>
+        <module>future</module>
     </modules>
 
     <parent>
@@ -187,6 +189,13 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.37</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>2.0.0-RC3</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>

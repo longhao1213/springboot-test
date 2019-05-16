@@ -15,8 +15,9 @@ public class ScheduledTest {
 
     private final static Logger logger= LoggerFactory.getLogger(ScheduledTest.class);
 
-    @Scheduled(fixedRate = 1000)
+    @Scheduled(cron = "*/5 * * * * ?")
     public void log() {
         logger.info("时间{}", new Date());
     }
+
 }
