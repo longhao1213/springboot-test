@@ -85,111 +85,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NettyServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/NettyServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-              <folding>
-                <element signature="e#640#641#0" expanded="true" />
-                <element signature="e#710#711#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NettyClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/NettyClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+            <state relative-caret-position="595">
+              <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
               <folding>
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#911#1174#0" expanded="true" />
+                <element signature="e#1173#1174#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChannelFuture.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/ChannelFuture.java">
+      <file leaf-file-name="NioSocketChannel.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/socket/nio/NioSocketChannel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="173" column="51" lean-forward="false" selection-start-line="173" selection-start-column="30" selection-end-line="173" selection-end-column="51" />
+            <state relative-caret-position="152">
+              <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenericFutureListener.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/util/concurrent/GenericFutureListener.java">
+      <file leaf-file-name="EchoClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty/src/main/java/com/lh/chapter7/EchoClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            <state relative-caret-position="285">
+              <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="45" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TcpCountHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/TcpCountHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChannelHandler.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/ChannelHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="211" column="7" lean-forward="true" selection-start-line="211" selection-start-column="7" selection-end-line="211" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScheduledExecutorService.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/concurrent/ScheduledExecutorService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="153" column="30" lean-forward="false" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AtomicInteger.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="184" column="21" lean-forward="false" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
-              <folding>
-                <element signature="e#4725#4726#0" expanded="true" />
-                <element signature="e#4793#4794#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -247,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/member/src/main/java/com/lh/dao/AuthorityMapper.java" />
         <option value="$PROJECT_DIR$/member/src/main/java/com/lh/MemberApp.java" />
         <option value="$PROJECT_DIR$/member/src/test/java/com/lh/controller/MemberControllerTest.java" />
         <option value="$PROJECT_DIR$/member/src/main/java/com/lh/test/Color.java" />
@@ -297,6 +222,7 @@
         <option value="$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/TcpCountHandler.java" />
         <option value="$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/Config.java" />
         <option value="$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/NettyServer.java" />
+        <option value="$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/ClientHandler.java" />
         <option value="$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/NettyClient.java" />
       </list>
     </option>
@@ -370,6 +296,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="netty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springboot-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springboot-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springboot-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springboot-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapter7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -470,7 +460,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="SearchEverywhereHistoryKey" value="int&#9;PSI&#9;JAVA://java.awt.TexturePaintContext.Int" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../healthDataCenter" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -1254,7 +1244,7 @@
       <workItem from="1557906744590" duration="5692000" />
       <workItem from="1557970006785" duration="16312000" />
       <workItem from="1558597366549" duration="7113000" />
-      <workItem from="1558938411757" duration="3792000" />
+      <workItem from="1558938411757" duration="6343000" />
     </task>
     <servers />
   </component>
@@ -1291,7 +1281,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441252000" />
+    <option name="totallyTimeSpent" value="443803000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1328,14 +1318,14 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29910713" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29910713" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14872068" sideWeight="0.4955357" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22441365" sideWeight="0.4955357" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19402985" sideWeight="0.50446427" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19308035" sideWeight="0.50446427" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1374,7 +1364,7 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1383,27 +1373,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springcloudtest.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1425">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/Channel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1559,6 +1528,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12635">
           <caret line="709" column="34" lean-forward="false" selection-start-line="709" selection-start-column="34" selection-end-line="709" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#53706#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#11566#11567#0" expanded="false" />
+            <element signature="e#11597#11598#0" expanded="false" />
+            <element signature="e#26565#26566#0" expanded="false" />
+            <element signature="e#26601#26602#0" expanded="false" />
+            <element signature="e#40171#40172#0" expanded="false" />
+            <element signature="e#40220#40221#0" expanded="false" />
+            <element signature="e#40917#40918#0" expanded="false" />
+            <element signature="e#40958#40959#0" expanded="false" />
+            <element signature="e#41780#41781#0" expanded="false" />
+            <element signature="e#41834#41835#0" expanded="false" />
+            <element signature="e#43077#43078#0" expanded="false" />
+            <element signature="e#43127#43128#0" expanded="false" />
+            <element signature="e#44970#44971#0" expanded="false" />
+            <element signature="e#45051#45052#0" expanded="false" />
+            <element signature="e#51559#51560#0" expanded="false" />
+            <element signature="e#51621#51622#0" expanded="false" />
+            <element signature="e#51882#51883#0" expanded="false" />
+            <element signature="e#51946#51947#0" expanded="false" />
+            <element signature="e#52191#52192#0" expanded="false" />
+            <element signature="e#52255#52256#0" expanded="false" />
+            <element signature="e#52326#52327#0" expanded="false" />
+            <element signature="e#52394#52395#0" expanded="false" />
+            <element signature="e#52670#52671#0" expanded="false" />
+            <element signature="e#52739#52740#0" expanded="false" />
+            <element signature="e#52802#52803#0" expanded="false" />
+            <element signature="e#52848#52849#0" expanded="false" />
+            <element signature="e#53097#53098#0" expanded="false" />
+            <element signature="e#53158#53159#0" expanded="false" />
+            <element signature="e#53238#53239#0" expanded="false" />
+            <element signature="e#53302#53303#0" expanded="false" />
+            <element signature="e#53360#53361#0" expanded="false" />
+            <element signature="e#53422#53423#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1610,18 +1615,6 @@
           <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
             <element signature="e#0#4969#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty/src/main/java/com/lh/chapter7/EchoClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1586#1587#0" expanded="false" />
-            <element signature="e#1642#1643#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1720,8 +1713,8 @@
         <state relative-caret-position="290">
           <caret line="184" column="21" lean-forward="false" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
           <folding>
-            <element signature="e#4725#4726#0" expanded="true" />
-            <element signature="e#4793#4794#0" expanded="true" />
+            <element signature="e#4725#4726#0" expanded="false" />
+            <element signature="e#4793#4794#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1738,14 +1731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="211" column="7" lean-forward="true" selection-start-line="211" selection-start-column="7" selection-end-line="211" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/TcpCountHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1774,24 +1759,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/TcpCountHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/NettyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        <state relative-caret-position="285">
+          <caret line="32" column="47" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="47" />
           <folding>
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#710#711#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/bootstrap/Bootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="124" column="24" lean-forward="false" selection-start-line="124" selection-start-column="11" selection-end-line="124" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty/src/main/java/com/lh/chapter7/EchoClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/socket/nio/NioSocketChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/milionServer/src/main/java/com/milionServer/NettyClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        <state relative-caret-position="595">
+          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
           <folding>
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#911#1174#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,17 +1,10 @@
 package com.milionServer;
 
 import io.netty.bootstrap.Bootstrap;
-import io.netty.channel.ChannelFutureListener;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOption;
-import io.netty.channel.EventLoopGroup;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.net.Socket;
-import java.util.concurrent.ExecutionException;
+import io.netty.channel.socket.nio.NioSocketChannel;
 
 /**
  * Copyright (C), 2006-2010, ChengDu ybya info. Co., Ltd.
@@ -33,12 +26,12 @@ public class NettyClient {
 
         Bootstrap bootstrap = new Bootstrap();
         bootstrap.group(loopGroup)
-                .channel(SocketChannel.class)
+                .channel(NioSocketChannel.class)
                 .option(ChannelOption.SO_REUSEADDR, true)
                 .handler(new ChannelInitializer<SocketChannel>() {
                     @Override
                     protected void initChannel(SocketChannel ch) throws Exception {
-
+                        ch.pipeline().addLast(new ClientHandler());
                     }
                 });
         int index = 0;
@@ -46,7 +39,7 @@ public class NettyClient {
         while (true) {
             finalPort = startPort + index;
             try {
-                bootstrap.bind(host, finalPort).addListener((ChannelFutureListener) future -> {
+                bootstrap.connect(host, finalPort).addListener((ChannelFutureListener) future -> {
                     if (!future.isSuccess()) {
                         System.out.println("创建连接失败");
                     }
