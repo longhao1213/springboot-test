@@ -27,6 +27,7 @@
         <module>authority</module>
         <module>nio</module>
         <module>future</module>
+        <module>milionServer</module>
     </modules>
 
     <parent>

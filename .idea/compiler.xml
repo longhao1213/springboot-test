@@ -11,6 +11,7 @@
         <module name="future" />
         <module name="jwt" />
         <module name="member" />
+        <module name="milionServer" />
         <module name="mongodb" />
         <module name="mybatis" />
         <module name="mybatispageHelper" />
@@ -33,6 +34,7 @@
       <module name="jdbc" target="1.8" />
       <module name="jwt" target="1.8" />
       <module name="member" target="1.8" />
+      <module name="milionServer" target="1.8" />
       <module name="mongodb" target="1.8" />
       <module name="mongodb2" target="1.8" />
       <module name="mybatis" target="1.8" />

@@ -1,12 +1,15 @@
 package com.lh.chapter7;
 
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.DelimiterBasedFrameDecoder;
 import io.netty.handler.codec.LineBasedFrameDecoder;
 import io.netty.handler.codec.string.StringDecoder;
 import org.slf4j.Logger;
@@ -33,9 +36,15 @@ public class EchoServer {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
-                            // 解码器 单位 字节 此解码器指在数据在1024个字节内必须出现换行符,否者报错
-                            ch.pipeline().addLast(new LineBasedFrameDecoder(1024));
-                            // 解码器,处理
+//                            // 换行符解码器 单位 字节 此解码器指在数据在1024个字节内必须出现换行符,否者报错
+//                            ch.pipeline().addLast(new LineBasedFrameDecoder(100));
+
+                            // 创建一个切割符
+                            ByteBuf byteBuf = Unpooled.copiedBuffer("&_".getBytes());
+                            // 自定义字符解码器 切割符为ByteBuf类型的 还有两个参数 stripDelimiter:接收的数据是否去掉切割符 failFast:在指定字节内没有找到对应切割符,是否继续遍历后面的数据寻找
+                            ch.pipeline().addLast(new DelimiterBasedFrameDecoder(1024, byteBuf));
+
+                            // 解码器,将数据转换成String类型
                             ch.pipeline().addLast(new StringDecoder());
                             ch.pipeline().addLast(new EchoServerHandler());
                         }
