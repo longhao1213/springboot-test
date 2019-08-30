@@ -9,6 +9,7 @@
         <module name="authority" />
         <module name="eureka" />
         <module name="future" />
+        <module name="gateway" />
         <module name="jwt" />
         <module name="member" />
         <module name="milionServer" />
@@ -31,6 +32,7 @@
       <module name="authority" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="future" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="jdbc" target="1.8" />
       <module name="jwt" target="1.8" />
       <module name="member" target="1.8" />

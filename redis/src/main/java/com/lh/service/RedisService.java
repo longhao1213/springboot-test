@@ -1,5 +1,7 @@
 package com.lh.service;
 
+import com.lh.config.Redis;
+import com.lh.dao.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -13,17 +15,20 @@ import javax.annotation.Resource;
  */
 @Service
 public class RedisService {
-    @Autowired
+    @Resource
     private StringRedisTemplate stringRedisTemplate;
 
     @Resource(name = "stringRedisTemplate")
     private ValueOperations<String,String> valOpsStr;
 
-    @Autowired
+    @Resource
     RedisTemplate<Object,Object> redisTemplate;
 
     @Resource(name = "redisTemplate")
     ValueOperations<Object,Object> valOpsObj;
+
+    @Autowired
+    private Redis redis;
 
     /**
      * 根据key获取String
@@ -50,7 +55,9 @@ public class RedisService {
      * 获取指定obj缓存
      */
     public Object getObj(Object key) {
-        return valOpsObj.get(key);
+        Class<? extends Object> aClass = new User().getClass();
+        Object o = redis.get(key, aClass);
+        return o;
     }
 
     /**
@@ -59,7 +66,8 @@ public class RedisService {
      * @param o2
      */
     public void setObj(Object o1, Object o2){
-        valOpsObj.set(o1, o2);
+        redis.set(o1, o2);
+//        valOpsObj.set(o1, o2);
     }
 
     /**

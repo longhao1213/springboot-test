@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/authority/authority.iml" filepath="$PROJECT_DIR$/authority/authority.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/future/future.iml" filepath="$PROJECT_DIR$/future/future.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/jwt/jwt.iml" filepath="$PROJECT_DIR$/jwt/jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/member/member.iml" filepath="$PROJECT_DIR$/member/member.iml" />
       <module fileurl="file://$PROJECT_DIR$/milionServer/milionServer.iml" filepath="$PROJECT_DIR$/milionServer/milionServer.iml" />

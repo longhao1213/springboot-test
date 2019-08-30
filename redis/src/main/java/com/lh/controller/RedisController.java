@@ -67,7 +67,11 @@ public class RedisController {
      * @return
      */
     @RequestMapping(value = "setObj")
-    public String setObj(String key, User user){
+    public String setObj(){
+        String key = "123";
+        User user = new User();
+        user.setId("1");
+//        user.setName("龙浩");
         try {
             redisService.setObj(key, user);
             return "success";
@@ -84,7 +88,10 @@ public class RedisController {
      */
     @RequestMapping(value = "getObj")
     public Object getObj(String key){
-        return redisService.getObj(key);
+        key = "123";
+        User user = (User)redisService.getObj(key);
+        System.out.println(user);
+        return user;
     }
 
 
